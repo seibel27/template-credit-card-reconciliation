@@ -11,7 +11,8 @@ from datetime import datetime
 import uuid, os
 
 tasks = get_tasks()
-task = tasks[0]
+if tasks:
+    task = tasks[0]
 
 EXPENSES_TABLE = 'expenses'
 TEAM_TABLE = 'team'
